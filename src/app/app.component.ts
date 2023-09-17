@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lifecycle';
+  inputText: string = "";
+
+  OnSubmit(inputEle: HTMLInputElement) {
+    this.inputText = inputEle.value
+  }
 }
